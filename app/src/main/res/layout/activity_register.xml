@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="295dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="315dp"
+        android:contentDescription="@string/contentDescLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/title" />
+
+    <LinearLayout
+        android:id="@+id/mail_layout"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/field"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/pass_confirm_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.135">
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/contentDescIcon"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <EditText
+            android:id="@+id/emailRegisterTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textColor="#192d57"
+            android:textColorHint="@color/light_grey"
+            android:autofillHints="emailAddress"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_layout"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/field"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/pass_confirm_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_layout">
+
+        <ImageView
+            android:id="@+id/pass_icon1"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/contentDescIcon"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/pass_icon" />
+
+        <EditText
+            android:id="@+id/passRegisterTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:autofillHints="password"
+            android:backgroundTint="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#192d57"
+            android:textColorHint="@color/light_grey"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/show_password_icon1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/contentDescIcon"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pass_confirm_layout"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/field"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/pass_icon2"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/contentDescIcon"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/pass_icon" />
+
+        <EditText
+            android:id="@+id/passConfirmRegisterTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:autofillHints="password"
+            android:backgroundTint="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColor="#192d57"
+            android:textColorHint="@color/light_grey"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/show_password_icon2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/contentDescIcon"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/login"
+        android:elevation="0dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Đăng kí"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/averia_libre_bold"
+        android:text="Bạn đã có tài khoản ?"
+        android:textAllCaps="false"
+        android:textColor="#FFB5B1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/progressBarRegister"
+        layout="@layout/progress_bar_with_text"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
