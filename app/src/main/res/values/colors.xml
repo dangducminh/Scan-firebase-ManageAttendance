@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0686e7</color>
+    <color name="colorPrimaryDark">#274ba6</color>
+    <color name="colorAccent">#f63044</color>
+    <color name="Button">#ee495a</color>
+    <color name="btnBack">#f01a76</color>
+    <color name="bottom_text">#01ffd3</color>
+    <color name="BodyBackground">#141F37</color>
+
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#673AB7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="teal_background">#B2EBC7</color>
+    <color name="teal_200">#80CBC4 </color>
+    <color name="teal_700">#00796B</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#8C8585</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="dark_blue">#002863</color>
+    <color name="dark_charcoal">#333333</color>
+    <color name="white_progress_layout">#CCFFFFFF</color>
+    <color name="pink_200">#FFC9C6</color>
+    <color name="pink_100">#ffd9d7</color>
+</resources>
